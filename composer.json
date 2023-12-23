@@ -1,0 +1,37 @@
+{
+    "name": "theposeidonas/verimor-sms",
+    "description": "Verimor SMS sender package for Laravel applications",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Baran Arda",
+            "email": "info@baranarda.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Theposeidonas\\VerimorSms\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Theposeidonas\\VerimorSms\\Tests\\": "tests"
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.18"
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^7.8"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "VerimorBaseServiceProvider"
+            ],
+            "aliases": {
+                "Verimor": "Theposeidonas\\VerimorSms\\Facade\\Verimor"
+            }
+        }
+    }
+}
