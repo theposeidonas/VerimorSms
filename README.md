@@ -93,8 +93,15 @@ composer require theposeidonas/verimor-sms
 Eğer gerekiyorsa config dosyasını paylaşmak için şu komutu çalıştırın;
 
 ```shell
-php artisan vendor::publish --tag=verimor-config --force
+php artisan vendor:publish --tag=verimor-config --force
 ```
+
+Sonrasında Verimor'u her yerde kullanmak için config/app.php dosyasında 'aliases' kısmına şu kodu ekleyin;
+
+```php
+'Verimor' => Theposeidonas\VerimorSms\Facades\Verimor::class,
+```
+
 ### Konfigürasyon
 
 Kullanım için projenize eklemeyi yaptıktan sonra, .env dosyası içerisinde yukarıya şu satırı ekleyip düzeltmelisiniz;
@@ -181,4 +188,4 @@ Proje Linki: [https://github.com/theposeidonas/VerimorSms](https://github.com/th
 [linkedin-url]: https://www.linkedin.com/in/theposeidonas/
 [Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
 [Laravel-url]: https://laravel.com
-[downloads-url]: https://img.shields.io/packagist/dt/theposeidonas/verimor-sms?style=for-the-badge&color=007ec6
+[downloads-url]: https://img.shields.io/packagist/dt/theposeidonas/verimor-sms?style=for-the-badge&color=007ec6&cacheSeconds=3600

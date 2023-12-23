@@ -27,7 +27,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VerimorBaseServiceProvider"
+                "Theposeidonas\\VerimorSms\\VerimorBaseServiceProvider"
             ],
             "aliases": {
                 "Verimor": "Theposeidonas\\VerimorSms\\Facade\\Verimor"
